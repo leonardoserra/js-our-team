@@ -66,14 +66,25 @@ for(i = 0; i < team.length; i++){
     const currentTeamMember = team[i];
     const schedaDom = document.createElement('div');
     schedaDom.classList.add('scheda');
+    const nomeDom = document.createElement('div');
+    const ruoloDom = document.createElement('div');
+    const fotoDom = document.createElement('div');
+
     teamDom.append(schedaDom);
+    schedaDom.append(nomeDom);
+    schedaDom.append(ruoloDom);
+    schedaDom.append(fotoDom);
+ 
+
     // console.log(currentTeamMember[nome]);
     
 
-    schedaDom.innerHTML += ('NOME: ' + currentTeamMember['nome'] + '<br/>');
-    schedaDom.innerHTML += ('RUOLO: ' + currentTeamMember['ruolo'] +'<br/>');
-    schedaDom.innerHTML += ('FOTO: ' + '<img src="' + currentTeamMember['foto'] + '" />');
-
+    // schedaDom.innerHTML += ('NOME: ' + currentTeamMember['nome'] + '<br/>');
+    // schedaDom.innerHTML += ('RUOLO: ' + currentTeamMember['ruolo'] +'<br/>');
+    // schedaDom.innerHTML += ('FOTO: ' + '<img src="' + currentTeamMember['foto'] + '" />');
+    nomeDom.append(currentTeamMember['nome']);
+    ruoloDom.append(currentTeamMember['ruolo']);
+    fotoDom.innerHTML = '<img src="' + currentTeamMember['foto'] + '" />';
     // for(let key in currentTeamMember){
     //     console.log(key + ' ' +currentTeamMember[key]);
     //     nomeDom.innerHTML += currentTeamMember[key] + '<br>';

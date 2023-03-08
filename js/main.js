@@ -71,6 +71,7 @@ for(i = 0; i < team.length; i++){
     const nomeDom = document.createElement('div');
     const ruoloDom = document.createElement('div');
     const fotoDom = document.createElement('div');
+    fotoDom.classList.add('square');
 
     teamDom.append(schedaDom);
 

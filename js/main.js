@@ -17,6 +17,8 @@
 */
 
 const teamDom = document.getElementById('team');
+
+
 const team = 
     [
         {
@@ -62,11 +64,21 @@ console.log(team);
 
 for(i = 0; i < team.length; i++){
     const currentTeamMember = team[i];
+    const schedaDom = document.createElement('div');
+    schedaDom.classList.add('scheda');
+    teamDom.append(schedaDom);
+    // console.log(currentTeamMember[nome]);
+    
 
-    for(let key in currentTeamMember){
-        console.log(key + ' ' +currentTeamMember[key]);
-        teamDom.innerHTML += ('<br>' + key + ' ' +currentTeamMember[key] + '<br>');
-    }
+    schedaDom.innerHTML += ('NOME: ' + currentTeamMember['nome'] + '<br/>');
+    schedaDom.innerHTML += ('RUOLO: ' + currentTeamMember['ruolo'] +'<br/>');
+    schedaDom.innerHTML += ('FOTO: ' + '<img src="' + currentTeamMember['foto'] + '" />');
+
+    // for(let key in currentTeamMember){
+    //     console.log(key + ' ' +currentTeamMember[key]);
+    //     nomeDom.innerHTML += currentTeamMember[key] + '<br>';
+        
+    // }
 }
 
 

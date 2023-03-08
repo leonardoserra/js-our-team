@@ -4,3 +4,20 @@
     box-sizing: border-box;
 }
 
+
+#container{
+    width: 1000px;
+    margin: auto;
+}
+
+#team{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.scheda{
+    width: calc(100 / 3 - 20px);
+    margin: 30px 10px;
+}
+
+

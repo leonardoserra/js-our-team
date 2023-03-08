@@ -57,4 +57,16 @@ const team =
     ]   
 
 
-    console.log(team);
+console.log(team);
+
+for(i = 0; i < team.length; i++){
+    const currentTeamMember = team[i];
+
+    for(let key in currentTeamMember){
+        console.log(key + ' ' +currentTeamMember[key]);
+    }
+}
+
+
+
+console.log

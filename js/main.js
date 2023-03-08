@@ -59,7 +59,6 @@ const team =
 
     ]   
 
-
 console.log(team);
 
 for(i = 0; i < team.length; i++){

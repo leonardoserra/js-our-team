@@ -16,6 +16,7 @@
         Organizzare i singoli membri in card/schede
 */
 
+const teamDom = document.getElementById('team');
 const team = 
     [
         {
@@ -64,6 +65,7 @@ for(i = 0; i < team.length; i++){
 
     for(let key in currentTeamMember){
         console.log(key + ' ' +currentTeamMember[key]);
+        teamDom.innerHTML += ('<br>' + key + ' ' +currentTeamMember[key] + '<br>');
     }
 }
 

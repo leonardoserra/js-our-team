@@ -79,15 +79,11 @@ for(i = 0; i < team.length; i++){
     schedaDom.append(fotoDom);
  
 
-    // console.log(currentTeamMember[nome]);
     
-
-    // schedaDom.innerHTML += ('NOME: ' + currentTeamMember['nome'] + '<br/>');
-    // schedaDom.innerHTML += ('RUOLO: ' + currentTeamMember['ruolo'] +'<br/>');
-    // schedaDom.innerHTML += ('FOTO: ' + '<img src="' + currentTeamMember['foto'] + '" />');
     nomeDom.append('Nome: ' + currentTeamMember['nome']);
     ruoloDom.append('Ruolo: ' + currentTeamMember['ruolo']);
     fotoDom.innerHTML = '<img src="./img/' + currentTeamMember['foto'] + '" />';
+    
     // for(let key in currentTeamMember){
     //     console.log(key + ' ' +currentTeamMember[key]);
     //     nomeDom.innerHTML += currentTeamMember[key] + '<br>';
